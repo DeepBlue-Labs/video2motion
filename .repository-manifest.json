@@ -1,0 +1,1507 @@
+{
+  "excluded": [
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "**/*.pyo"
+  ],
+  "files": [
+    {
+      "original": "03_npz/deploy_config_hg_ft_325k.json",
+      "path": "configs/deploy_config_hg_ft_325k.json",
+      "original_sha256": "081c789e95c40e30554b0164a3253c0672c568462fc0041d8407c7f54c6ffe38",
+      "sha256": "081c789e95c40e30554b0164a3253c0672c568462fc0041d8407c7f54c6ffe38",
+      "modified": false
+    },
+    {
+      "original": "03_npz/deploy_config_robot_constants.json",
+      "path": "configs/deploy_config_robot_constants.json",
+      "original_sha256": "4c81c6303c756f4d8efb3cee6e10e99bcd80e961572ee4499cb854178b34fe05",
+      "sha256": "4c81c6303c756f4d8efb3cee6e10e99bcd80e961572ee4499cb854178b34fe05",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/extend_full.py",
+      "path": "scripts/extend_full.py",
+      "original_sha256": "a59b61c15be58f3c9eefe70eb1ce0c53f4a5c714d3b66f53d4ecb17c36335534",
+      "sha256": "8fd775f83e3e07b0b1807059c91102cdc06928d866a2bbc187cb036baf993444",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/g1_model.py",
+      "path": "scripts/g1_model.py",
+      "original_sha256": "e30208e3e29a777e982f14f06d95ccd907262b3c76a74b9cb10bcca31cf888ec",
+      "sha256": "7cc8fb30ec6f50cecd91085aa74bd46f01e127ba13c9bb0ff09d3105bcd29b87",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/gvhmr_to_supermimic.py",
+      "path": "scripts/gvhmr_to_supermimic.py",
+      "original_sha256": "796edd807997a39e9febda951087ce6554ae4c7dfc4107f208ed1b8f3b51838c",
+      "sha256": "b006e3eb65ed28a018865b403cdab25e910e5eecf136fa96d3b3b0ef3450efcd",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/render_full_preview.py",
+      "path": "scripts/render_full_preview.py",
+      "original_sha256": "1c5964d2f387c53a1cf557aaa19c128f1573dc0cdc9571b98d889d67a4ee2e54",
+      "sha256": "3459eb3a28ef9c4be0f3dc33ea87c0163f7bf83c67654179e4c670fec5beff61",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/render_gvhmr_global_lowres.py",
+      "path": "scripts/render_gvhmr_global_lowres.py",
+      "original_sha256": "a8a2627593675db825ece38c5a7838b0567dfb0b62f05aff70f16fb274168d0d",
+      "sha256": "c43044f403b3516f76f3ba4bb235f9c237061269e435808bd153d5ec2440495f",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/render_npz_preview.py",
+      "path": "scripts/render_npz_preview.py",
+      "original_sha256": "088079412e09b83f0320c1e59e1db325229c651da5b3b4ffe444a9c38e2d1dd8",
+      "sha256": "6b503dee6540ec905d90e6ac2bc5e88d7a08a734d1c90bbe29e4a575d9fd1259",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/render_preview.py",
+      "path": "scripts/render_preview.py",
+      "original_sha256": "4cd260c1581d397431dcc61db813055c0814f28bef01f33493cc27b35e7569b3",
+      "sha256": "1cf1c1a86ac62157a2e10459dcd3ba24d53f209422e431b6ffd3a17d01385ad2",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/run_pipeline.sh",
+      "path": "scripts/run_pipeline.sh",
+      "original_sha256": "b01ed04cc091e6ff1252921fbcccbd7915dd1cd5e7754a9ee1bc69a37b3f9607",
+      "sha256": "aad649300014f902b4ada72176df478167f32dc846d2a6278478a1ed001021d4",
+      "modified": true
+    },
+    {
+      "original": "05_reproduce/video2motion_scripts/shot_bbx.py",
+      "path": "scripts/shot_bbx.py",
+      "original_sha256": "98c49c72e8b3dfc162fdb6195a4469df56b3b61019e15eb0cffc152b13deb9d1",
+      "sha256": "98c49c72e8b3dfc162fdb6195a4469df56b3b61019e15eb0cffc152b13deb9d1",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/GIT_COMMIT.txt",
+      "path": "vendor/gmr/GIT_COMMIT.txt",
+      "original_sha256": "87be27dc72202b988172d799097662313dbb86767cd911ccce57ad97f4cdb1bc",
+      "sha256": "87be27dc72202b988172d799097662313dbb86767cd911ccce57ad97f4cdb1bc",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/INSTALLED_VERSIONS.txt",
+      "path": "vendor/gmr/INSTALLED_VERSIONS.txt",
+      "original_sha256": "0ffa8ed98e660fbd61d60e8223f393a2556c05808a2816a5d12ec252c1e1bd23",
+      "sha256": "0ffa8ed98e660fbd61d60e8223f393a2556c05808a2816a5d12ec252c1e1bd23",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/LICENSE",
+      "path": "vendor/gmr/LICENSE",
+      "original_sha256": "c5a85c0b0012230739a0ab8f30eafba7f8ee7a1b29e025d01e27fa330298e522",
+      "sha256": "c5a85c0b0012230739a0ab8f30eafba7f8ee7a1b29e025d01e27fa330298e522",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/README.md",
+      "path": "vendor/gmr/README.md",
+      "original_sha256": "7507511b6a6cc36cbf54a68938a9dc2367ca8d911874124d65bd1a3d7be6179a",
+      "sha256": "7507511b6a6cc36cbf54a68938a9dc2367ca8d911874124d65bd1a3d7be6179a",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/LICENSE",
+      "path": "vendor/gmr/assets/unitree_g1/LICENSE",
+      "original_sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d",
+      "sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/README.md",
+      "path": "vendor/gmr/assets/unitree_g1/README.md",
+      "original_sha256": "881f2db615b183cd4c4c99ab4f7062ba5ca29d73a8a99266a1ac04ff9b0b27c0",
+      "sha256": "881f2db615b183cd4c4c99ab4f7062ba5ca29d73a8a99266a1ac04ff9b0b27c0",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/g1_mocap_29dof.xml",
+      "path": "vendor/gmr/assets/unitree_g1/g1_mocap_29dof.xml",
+      "original_sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8",
+      "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/head_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/head_link.STL",
+      "original_sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411",
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_ankle_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_ankle_pitch_link.STL",
+      "original_sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_ankle_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_ankle_roll_link.STL",
+      "original_sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_elbow_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_elbow_link.STL",
+      "original_sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_index_0_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_index_0_link.STL",
+      "original_sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_index_1_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_index_1_link.STL",
+      "original_sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_middle_0_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_middle_0_link.STL",
+      "original_sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_middle_1_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_middle_1_link.STL",
+      "original_sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_palm_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_palm_link.STL",
+      "original_sha256": "23a486b75bd78a9bf03cec25d84d87f97f3dae038cf21a743b6d469b337e4004",
+      "sha256": "23a486b75bd78a9bf03cec25d84d87f97f3dae038cf21a743b6d469b337e4004",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_thumb_0_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_thumb_0_link.STL",
+      "original_sha256": "a90c721661c0622685488a3c74d1e122c7da89242d3a1daef75edb83422d05e0",
+      "sha256": "a90c721661c0622685488a3c74d1e122c7da89242d3a1daef75edb83422d05e0",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_thumb_1_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_thumb_1_link.STL",
+      "original_sha256": "445c54a45bc13ce36001556f66bc0f49c83cb40321205ae4d676bb2874325684",
+      "sha256": "445c54a45bc13ce36001556f66bc0f49c83cb40321205ae4d676bb2874325684",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hand_thumb_2_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hand_thumb_2_link.STL",
+      "original_sha256": "3d8dbe5085acfc213d21aa8b0782e89cd79084e9678f3a85fc7b04a86b029db5",
+      "sha256": "3d8dbe5085acfc213d21aa8b0782e89cd79084e9678f3a85fc7b04a86b029db5",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hip_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hip_pitch_link.STL",
+      "original_sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hip_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hip_roll_link.STL",
+      "original_sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_hip_yaw_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_hip_yaw_link.STL",
+      "original_sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_knee_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_knee_link.STL",
+      "original_sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_rubber_hand.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_rubber_hand.STL",
+      "original_sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+      "sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_shoulder_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_shoulder_pitch_link.STL",
+      "original_sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_shoulder_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_shoulder_roll_link.STL",
+      "original_sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_shoulder_yaw_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_shoulder_yaw_link.STL",
+      "original_sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_wrist_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_wrist_pitch_link.STL",
+      "original_sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9",
+      "sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_wrist_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_wrist_roll_link.STL",
+      "original_sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c",
+      "sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_wrist_roll_rubber_hand.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_wrist_roll_rubber_hand.STL",
+      "original_sha256": "e81030abd023bd9e4a308ef376d814a2c12d684d8a7670c335bbd5cd7809c909",
+      "sha256": "e81030abd023bd9e4a308ef376d814a2c12d684d8a7670c335bbd5cd7809c909",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/left_wrist_yaw_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/left_wrist_yaw_link.STL",
+      "original_sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b",
+      "sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/logo_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/logo_link.STL",
+      "original_sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/pelvis.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/pelvis.STL",
+      "original_sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31",
+      "sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/pelvis_contour_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/pelvis_contour_link.STL",
+      "original_sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420",
+      "sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_ankle_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_ankle_pitch_link.STL",
+      "original_sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_ankle_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_ankle_roll_link.STL",
+      "original_sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_elbow_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_elbow_link.STL",
+      "original_sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_index_0_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_index_0_link.STL",
+      "original_sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_index_1_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_index_1_link.STL",
+      "original_sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_middle_0_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_middle_0_link.STL",
+      "original_sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_middle_1_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_middle_1_link.STL",
+      "original_sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_palm_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_palm_link.STL",
+      "original_sha256": "86c0b231cc44477d64a6493e5a427ba16617a00738112dd187c652675b086fb9",
+      "sha256": "86c0b231cc44477d64a6493e5a427ba16617a00738112dd187c652675b086fb9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_thumb_0_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_thumb_0_link.STL",
+      "original_sha256": "544298d0ea1088f5b276a10cc6a6a9e533efdd91594955fdc956c46211d07f83",
+      "sha256": "544298d0ea1088f5b276a10cc6a6a9e533efdd91594955fdc956c46211d07f83",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_thumb_1_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_thumb_1_link.STL",
+      "original_sha256": "0a9a820da8dd10f298778b714f1364216e8a5976f4fd3a05689ea26327d44bf6",
+      "sha256": "0a9a820da8dd10f298778b714f1364216e8a5976f4fd3a05689ea26327d44bf6",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hand_thumb_2_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hand_thumb_2_link.STL",
+      "original_sha256": "3f1bfb37668e8f61801c8d25f171fa1949e08666be86c67acad7e0079937cc45",
+      "sha256": "3f1bfb37668e8f61801c8d25f171fa1949e08666be86c67acad7e0079937cc45",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hip_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hip_pitch_link.STL",
+      "original_sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hip_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hip_roll_link.STL",
+      "original_sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_hip_yaw_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_hip_yaw_link.STL",
+      "original_sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_knee_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_knee_link.STL",
+      "original_sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_rubber_hand.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_rubber_hand.STL",
+      "original_sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+      "sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_shoulder_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_shoulder_pitch_link.STL",
+      "original_sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_shoulder_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_shoulder_roll_link.STL",
+      "original_sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_shoulder_yaw_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_shoulder_yaw_link.STL",
+      "original_sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_wrist_pitch_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_wrist_pitch_link.STL",
+      "original_sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477",
+      "sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_wrist_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_wrist_roll_link.STL",
+      "original_sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f",
+      "sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_wrist_roll_rubber_hand.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_wrist_roll_rubber_hand.STL",
+      "original_sha256": "0729aff1ac4356f9314de13a46906267642e58bc47f0d8a7f17f6590a6242ccf",
+      "sha256": "0729aff1ac4356f9314de13a46906267642e58bc47f0d8a7f17f6590a6242ccf",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/right_wrist_yaw_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/right_wrist_yaw_link.STL",
+      "original_sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6",
+      "sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/torso_constraint_L_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/torso_constraint_L_link.STL",
+      "original_sha256": "82be7f93e85b3d303a1d1e1847e2c916939bd61c424ed1ebd28691ec33909dd1",
+      "sha256": "82be7f93e85b3d303a1d1e1847e2c916939bd61c424ed1ebd28691ec33909dd1",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/torso_constraint_L_rod_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/torso_constraint_L_rod_link.STL",
+      "original_sha256": "c10de1effa7ea797ac268006aa2a739036c7e1f326b2012d711ee2c20c5a6e96",
+      "sha256": "c10de1effa7ea797ac268006aa2a739036c7e1f326b2012d711ee2c20c5a6e96",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/torso_constraint_R_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/torso_constraint_R_link.STL",
+      "original_sha256": "54ded433a3a0c76027365856fdbd55215643de88846f7d436598a4071e682725",
+      "sha256": "54ded433a3a0c76027365856fdbd55215643de88846f7d436598a4071e682725",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/torso_constraint_R_rod_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/torso_constraint_R_rod_link.STL",
+      "original_sha256": "cb83fd38a9f06c99e3f301c70f12d94ae770a8f0cf9501f83580a27f908990b4",
+      "sha256": "cb83fd38a9f06c99e3f301c70f12d94ae770a8f0cf9501f83580a27f908990b4",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/torso_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/torso_link.STL",
+      "original_sha256": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0",
+      "sha256": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/torso_link_23dof_rev_1_0.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/torso_link_23dof_rev_1_0.STL",
+      "original_sha256": "3cd0d56fde14b73c1623304684805029971c4f84b596f9914e823ca70a107fd2",
+      "sha256": "3cd0d56fde14b73c1623304684805029971c4f84b596f9914e823ca70a107fd2",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/torso_link_rev_1_0.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/torso_link_rev_1_0.STL",
+      "original_sha256": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723",
+      "sha256": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/waist_constraint_L.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/waist_constraint_L.STL",
+      "original_sha256": "8ebafdcb4de6871113f0ca2c356618d6e46b1d50f6c0bf9e37f47b9d8e100d99",
+      "sha256": "8ebafdcb4de6871113f0ca2c356618d6e46b1d50f6c0bf9e37f47b9d8e100d99",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/waist_constraint_R.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/waist_constraint_R.STL",
+      "original_sha256": "791902a291ffbd35ab97383b7b44ea5d975de7c80eef838797c970790b382ca9",
+      "sha256": "791902a291ffbd35ab97383b7b44ea5d975de7c80eef838797c970790b382ca9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/waist_roll_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/waist_roll_link.STL",
+      "original_sha256": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df",
+      "sha256": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/waist_roll_link_rev_1_0.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/waist_roll_link_rev_1_0.STL",
+      "original_sha256": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97",
+      "sha256": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/waist_support_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/waist_support_link.STL",
+      "original_sha256": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a",
+      "sha256": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/waist_yaw_link.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/waist_yaw_link.STL",
+      "original_sha256": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb",
+      "sha256": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/assets/unitree_g1/meshes/waist_yaw_link_rev_1_0.STL",
+      "path": "vendor/gmr/assets/unitree_g1/meshes/waist_yaw_link_rev_1_0.STL",
+      "original_sha256": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c",
+      "sha256": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/__init__.py",
+      "path": "vendor/gmr/general_motion_retargeting/__init__.py",
+      "original_sha256": "4de844f0c486a30f184c64092634a14e709daabc42ca657e76afbcda7bbe96d8",
+      "sha256": "4de844f0c486a30f184c64092634a14e709daabc42ca657e76afbcda7bbe96d8",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/data_loader.py",
+      "path": "vendor/gmr/general_motion_retargeting/data_loader.py",
+      "original_sha256": "d74e11486acafd8a30790da1285990a0db32036f4b1f4b708d922a16c2b2d71b",
+      "sha256": "d74e11486acafd8a30790da1285990a0db32036f4b1f4b708d922a16c2b2d71b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "original_sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320",
+      "sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_h2.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_h2.json",
+      "original_sha256": "0a3b4665f2d38d7fe23ce8fd80bb2e940be81cd0d8213d92edfe26963914ec36",
+      "sha256": "0a3b4665f2d38d7fe23ce8fd80bb2e940be81cd0d8213d92edfe26963914ec36",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_n1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_n1.json",
+      "original_sha256": "5da832739c9a8c1a343e2456712b65d27404a725f64a3170ac99782d8c271d36",
+      "sha256": "5da832739c9a8c1a343e2456712b65d27404a725f64a3170ac99782d8c271d36",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_pm01.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_pm01.json",
+      "original_sha256": "6a57f162b9e38dc300bdb11dcfa409d78018db1a4ab7041c5bdaf0a7484bea85",
+      "sha256": "6a57f162b9e38dc300bdb11dcfa409d78018db1a4ab7041c5bdaf0a7484bea85",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_t1_29dof.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_t1_29dof.json",
+      "original_sha256": "143f96f53104a5627bfc4f176c902172b4ea359c82cd40d133a3c6105751081a",
+      "sha256": "143f96f53104a5627bfc4f176c902172b4ea359c82cd40d133a3c6105751081a",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_toddy.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_lafan1_to_toddy.json",
+      "original_sha256": "68cb1f3fcfe7593d4acab8beafbf5529119ef5aa389e77b03769a6115a8deafe",
+      "sha256": "68cb1f3fcfe7593d4acab8beafbf5529119ef5aa389e77b03769a6115a8deafe",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_nokov_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_nokov_to_g1.json",
+      "original_sha256": "d3d6d94ae644902697a676e659524183700d3c7c43362404cf7cb8697ae3239f",
+      "sha256": "d3d6d94ae644902697a676e659524183700d3c7c43362404cf7cb8697ae3239f",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_to_talos.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_to_talos.json",
+      "original_sha256": "34a3b0e17b37aaa424ca5d54b24e8b22dcb41b9b76e1d46aa6153e46cca78295",
+      "sha256": "34a3b0e17b37aaa424ca5d54b24e8b22dcb41b9b76e1d46aa6153e46cca78295",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_xsens_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_xsens_to_g1.json",
+      "original_sha256": "9fbbb70976d10cb0b50f44abe140ee7357c7789698a3e300bdf27f3a4dc6aaea",
+      "sha256": "9fbbb70976d10cb0b50f44abe140ee7357c7789698a3e300bdf27f3a4dc6aaea",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/bvh_xsens_to_h1_2.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/bvh_xsens_to_h1_2.json",
+      "original_sha256": "3ef02cf538f76ba25b7be27abea9a0ec80964dab30dc9b5a96721be5b4bed39c",
+      "sha256": "3ef02cf538f76ba25b7be27abea9a0ec80964dab30dc9b5a96721be5b4bed39c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/fbx_offline_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/fbx_offline_to_g1.json",
+      "original_sha256": "ac918cbc97051504fd99da32832a32a5e78f2c98d27b6f5f40ac1607554a8b05",
+      "sha256": "ac918cbc97051504fd99da32832a32a5e78f2c98d27b6f5f40ac1607554a8b05",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/fbx_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/fbx_to_g1.json",
+      "original_sha256": "68500f9b6a99dea0fe73e4dbc1bd18fbe77ca1f933dba32f7ca2b5aa8bf180ed",
+      "sha256": "68500f9b6a99dea0fe73e4dbc1bd18fbe77ca1f933dba32f7ca2b5aa8bf180ed",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_adam.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_adam.json",
+      "original_sha256": "3a201cfd60d685b3b9537f8f37272c13aaf74dc1b59aa3067b7f1641f8bff36b",
+      "sha256": "3a201cfd60d685b3b9537f8f37272c13aaf74dc1b59aa3067b7f1641f8bff36b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_bhl.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_bhl.json",
+      "original_sha256": "578289f66c042125405e715d6797860106417058c26f72300e55d4de5168c05c",
+      "sha256": "578289f66c042125405e715d6797860106417058c26f72300e55d4de5168c05c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_g1.json",
+      "original_sha256": "db35f79822fb3bc712cd473d672e60bb91214528524d363e44d7c9da0c5cfc9b",
+      "sha256": "db35f79822fb3bc712cd473d672e60bb91214528524d363e44d7c9da0c5cfc9b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_gr3.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_gr3.json",
+      "original_sha256": "3d07a4ad060aaf52e532fffe4f24d237d783bf40aa1e611262c4b18bd1733915",
+      "sha256": "3d07a4ad060aaf52e532fffe4f24d237d783bf40aa1e611262c4b18bd1733915",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_h1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_h1.json",
+      "original_sha256": "e0e497dc5d0d866dcea8b74a40913a454b7150a500abd341488c550ac100d1d9",
+      "sha256": "e0e497dc5d0d866dcea8b74a40913a454b7150a500abd341488c550ac100d1d9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_h1_2.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_h1_2.json",
+      "original_sha256": "9ae00733ccc63afa8c1314e97042864d7c28d63c3238e97971f67070992cf629",
+      "sha256": "9ae00733ccc63afa8c1314e97042864d7c28d63c3238e97971f67070992cf629",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_hi.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_hi.json",
+      "original_sha256": "88df377c955223ec0140d11d1ab4c56fdb155aafbab616af10e1eccefb9a321c",
+      "sha256": "88df377c955223ec0140d11d1ab4c56fdb155aafbab616af10e1eccefb9a321c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_k1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_k1.json",
+      "original_sha256": "7517e2b59c27b438cdf199d29dc3f51f0c11e4f60b209c8f64fd6a9709205974",
+      "sha256": "7517e2b59c27b438cdf199d29dc3f51f0c11e4f60b209c8f64fd6a9709205974",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_kuavo.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_kuavo.json",
+      "original_sha256": "74c4d8f956b25e156634cd42b583e824642e06d0104443b12c5f07383c201dbf",
+      "sha256": "74c4d8f956b25e156634cd42b583e824642e06d0104443b12c5f07383c201dbf",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_n1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_n1.json",
+      "original_sha256": "44ee5f652e9fff1929ed40b6d6248e443a37d86dce165e071e0f941532e14238",
+      "sha256": "44ee5f652e9fff1929ed40b6d6248e443a37d86dce165e071e0f941532e14238",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_openloong.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_openloong.json",
+      "original_sha256": "db35f79822fb3bc712cd473d672e60bb91214528524d363e44d7c9da0c5cfc9b",
+      "sha256": "db35f79822fb3bc712cd473d672e60bb91214528524d363e44d7c9da0c5cfc9b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_pm01.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_pm01.json",
+      "original_sha256": "7b6ce94c19f64e3867982459d759f3cc153a330594e51845ab605073620ed65a",
+      "sha256": "7b6ce94c19f64e3867982459d759f3cc153a330594e51845ab605073620ed65a",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_r1pro.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_r1pro.json",
+      "original_sha256": "1e30ea378ef9c40ee6686d3ba5fc3e90de15c49199d41ef340bf1f877088f365",
+      "sha256": "1e30ea378ef9c40ee6686d3ba5fc3e90de15c49199d41ef340bf1f877088f365",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_t1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_t1.json",
+      "original_sha256": "61ce8e43a29da9c8ee87adef48511c4e2a0d92b2f02fd2ae4819ec81f83638b3",
+      "sha256": "61ce8e43a29da9c8ee87adef48511c4e2a0d92b2f02fd2ae4819ec81f83638b3",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_t1_29dof.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_t1_29dof.json",
+      "original_sha256": "bd4c2e218ffa9a1de8311404b9f90aaeee8d2f68bc68f520c38b6950df09c569",
+      "sha256": "bd4c2e218ffa9a1de8311404b9f90aaeee8d2f68bc68f520c38b6950df09c569",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_tienkung.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_tienkung.json",
+      "original_sha256": "ec094268e0f63538563fcf4478a53bd8e27371e0fcc33afa01e73fab630d4eed",
+      "sha256": "ec094268e0f63538563fcf4478a53bd8e27371e0fcc33afa01e73fab630d4eed",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/smplx_to_toddy.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/smplx_to_toddy.json",
+      "original_sha256": "5d5ed950e109a7bb12e22df9c510ddaa1d42248ecc3b68ca1dbe4b53875a5da8",
+      "sha256": "5d5ed950e109a7bb12e22df9c510ddaa1d42248ecc3b68ca1dbe4b53875a5da8",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/xrobot_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/xrobot_to_g1.json",
+      "original_sha256": "34ff208990409365928e86a433d7201c268b690cac40b4c09eb83a1067d63a0b",
+      "sha256": "34ff208990409365928e86a433d7201c268b690cac40b4c09eb83a1067d63a0b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/ik_configs/xsens_mvn_to_g1.json",
+      "path": "vendor/gmr/general_motion_retargeting/ik_configs/xsens_mvn_to_g1.json",
+      "original_sha256": "d02933acb0f6377afaf072f1a788c9a9ef6b3432d4783da04d1c533409087f83",
+      "sha256": "d02933acb0f6377afaf072f1a788c9a9ef6b3432d4783da04d1c533409087f83",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/kinematics_model.py",
+      "path": "vendor/gmr/general_motion_retargeting/kinematics_model.py",
+      "original_sha256": "c5ca9583d05f8ec75c3af893e1cccefc39146510038ff479ac9e7960d40d23c9",
+      "sha256": "c5ca9583d05f8ec75c3af893e1cccefc39146510038ff479ac9e7960d40d23c9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/motion_retarget.py",
+      "path": "vendor/gmr/general_motion_retargeting/motion_retarget.py",
+      "original_sha256": "5ec97cd4ebb6e3ce4fb525731ead381ccc3567eeb425a88a842688bed2f49718",
+      "sha256": "5ec97cd4ebb6e3ce4fb525731ead381ccc3567eeb425a88a842688bed2f49718",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/neck_retarget.py",
+      "path": "vendor/gmr/general_motion_retargeting/neck_retarget.py",
+      "original_sha256": "8520e5d85d0ab49e0324913ec4ccd00d1547439cf4540b768f6df1b63a66de9d",
+      "sha256": "8520e5d85d0ab49e0324913ec4ccd00d1547439cf4540b768f6df1b63a66de9d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/optitrack_vendor/DataDescriptions.py",
+      "path": "vendor/gmr/general_motion_retargeting/optitrack_vendor/DataDescriptions.py",
+      "original_sha256": "26cbe1cf7bc09bf6af13adc3d25c95224f0e7cd0cefdd0c43e317aa95f4feeb5",
+      "sha256": "26cbe1cf7bc09bf6af13adc3d25c95224f0e7cd0cefdd0c43e317aa95f4feeb5",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/optitrack_vendor/MoCapData.py",
+      "path": "vendor/gmr/general_motion_retargeting/optitrack_vendor/MoCapData.py",
+      "original_sha256": "d1c1c137b9aa40274ddd5150c152340a39e2ab303d470f425ff59d59e76bfecf",
+      "sha256": "d1c1c137b9aa40274ddd5150c152340a39e2ab303d470f425ff59d59e76bfecf",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/optitrack_vendor/NatNetClient.py",
+      "path": "vendor/gmr/general_motion_retargeting/optitrack_vendor/NatNetClient.py",
+      "original_sha256": "9488167be4965c12b520118d0e1a7564aa3c705019f4d4eed5fb28ef26624f3b",
+      "sha256": "9488167be4965c12b520118d0e1a7564aa3c705019f4d4eed5fb28ef26624f3b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/params.py",
+      "path": "vendor/gmr/general_motion_retargeting/params.py",
+      "original_sha256": "43610e0b4f32b8f5f9e8790c947f4e9a79805ee01d80eda594fabf3d8b48a46b",
+      "sha256": "43610e0b4f32b8f5f9e8790c947f4e9a79805ee01d80eda594fabf3d8b48a46b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/robot_motion_viewer.py",
+      "path": "vendor/gmr/general_motion_retargeting/robot_motion_viewer.py",
+      "original_sha256": "f8d7e3e45044477b8cc76d8fc497899c904feda07750025ebd0a70276930a68e",
+      "sha256": "f8d7e3e45044477b8cc76d8fc497899c904feda07750025ebd0a70276930a68e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/rot_utils.py",
+      "path": "vendor/gmr/general_motion_retargeting/rot_utils.py",
+      "original_sha256": "5881bca90e5ab49309ff0648e2d615b84f0ce609febc75fd835d9635cb804854",
+      "sha256": "5881bca90e5ab49309ff0648e2d615b84f0ce609febc75fd835d9635cb804854",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/torch_utils.py",
+      "path": "vendor/gmr/general_motion_retargeting/torch_utils.py",
+      "original_sha256": "816704bf3dec6db816ca43bd1affde2989acde90cb43357b9fb623f17a8b6c6c",
+      "sha256": "816704bf3dec6db816ca43bd1affde2989acde90cb43357b9fb623f17a8b6c6c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/__init__.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/lafan1.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/lafan1.py",
+      "original_sha256": "0fe7f4a80aa9c5bb85a55654c3771a82e5621b98ff599c6484a4476c26ff3ff3",
+      "sha256": "0fe7f4a80aa9c5bb85a55654c3771a82e5621b98ff599c6484a4476c26ff3ff3",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/lafan_vendor/__init__.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/lafan_vendor/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/lafan_vendor/extract.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/lafan_vendor/extract.py",
+      "original_sha256": "4c374bbcb7d1026b940862b130ada9da45850d6dca2c60d6ee6b4024d0a06f22",
+      "sha256": "4c374bbcb7d1026b940862b130ada9da45850d6dca2c60d6ee6b4024d0a06f22",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/lafan_vendor/license.txt",
+      "path": "vendor/gmr/general_motion_retargeting/utils/lafan_vendor/license.txt",
+      "original_sha256": "e11244310739afea404794c9405967a13abdbe7e2492052e94d7c81fe27c8b66",
+      "sha256": "e11244310739afea404794c9405967a13abdbe7e2492052e94d7c81fe27c8b66",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/lafan_vendor/utils.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/lafan_vendor/utils.py",
+      "original_sha256": "1181093a4641a7981e3e83589d32755b8b17301862d043f40c9fcbcb3926ac5e",
+      "sha256": "1181093a4641a7981e3e83589d32755b8b17301862d043f40c9fcbcb3926ac5e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/smpl.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/smpl.py",
+      "original_sha256": "4d358d78c667e6c362fe0e2db984041564a8e8e8a6f19ba29c83c5a8e6687b0d",
+      "sha256": "4d358d78c667e6c362fe0e2db984041564a8e8e8a6f19ba29c83c5a8e6687b0d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens.py",
+      "original_sha256": "022dacbba1064d3c50eeecb51ac8e5af87311f95e830d9a7d9190fa1e7b60a60",
+      "sha256": "022dacbba1064d3c50eeecb51ac8e5af87311f95e830d9a7d9190fa1e7b60a60",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/BVHParser.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/BVHParser.py",
+      "original_sha256": "5387497a142efc2a5567e9f2fc9b8db2069699a8342fffe7737b4ffd9b0e5642",
+      "sha256": "5387497a142efc2a5567e9f2fc9b8db2069699a8342fffe7737b4ffd9b0e5642",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/__init__.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/CurveEditor.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/CurveEditor.py",
+      "original_sha256": "3769b632f84d48feadd69c3ccb424746d7fe6c1fdb799ebf0e47b0ee65a52c4a",
+      "sha256": "3769b632f84d48feadd69c3ccb424746d7fe6c1fdb799ebf0e47b0ee65a52c4a",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/__init__.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/bspline.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/bspline.py",
+      "original_sha256": "303afd68c45bd0702b2356c90f41224d0c731e1f9321b2ed7015c595b4d01f1d",
+      "sha256": "303afd68c45bd0702b2356c90f41224d0c731e1f9321b2ed7015c595b4d01f1d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/spine_bias_edit.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/bvh_edit/spine_bias_edit.py",
+      "original_sha256": "2866399ec41999bf87753cc92632280bc3d558393e26e5a9208328a2254eb45e",
+      "sha256": "2866399ec41999bf87753cc92632280bc3d558393e26e5a9208328a2254eb45e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/mujoco_retargeting_robot_view.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/mujoco_retargeting_robot_view.py",
+      "original_sha256": "eb632e070054806ef56ba9f9dfa02302c58070da4298308dc709cd1d7e3227bb",
+      "sha256": "eb632e070054806ef56ba9f9dfa02302c58070da4298308dc709cd1d7e3227bb",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/mujoco_xml_read.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/mujoco_xml_read.py",
+      "original_sha256": "3a6fd8689a1a72f7f38575edb002f26460b088c59c296c195a7eeb9548233e5b",
+      "sha256": "3a6fd8689a1a72f7f38575edb002f26460b088c59c296c195a7eeb9548233e5b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/mujoco_xsens_bvh_view.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/mujoco_xsens_bvh_view.py",
+      "original_sha256": "a727ab14dcb7527ec5f2f4ee02b0f6058318296c23eff809886a83b595e4db80",
+      "sha256": "a727ab14dcb7527ec5f2f4ee02b0f6058318296c23eff809886a83b595e4db80",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/pkls_to_csvs.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/pkls_to_csvs.py",
+      "original_sha256": "fb0c0358dcc9e7dc3ff9714a9e1c00b6bf49239a5287f10ce4ebc9784ab34220",
+      "sha256": "fb0c0358dcc9e7dc3ff9714a9e1c00b6bf49239a5287f10ce4ebc9784ab34220",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/rq.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/rq.py",
+      "original_sha256": "ce69e65decceda329d154403b6e69e3e97a82e44bf65d1a4c3c1dfc56480fbec",
+      "sha256": "ce69e65decceda329d154403b6e69e3e97a82e44bf65d1a4c3c1dfc56480fbec",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/video_recorder.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/video_recorder.py",
+      "original_sha256": "c318cd7982a5ec9c9be8958f5b273419d66573874b1a9282635d696b4ef4bd5e",
+      "sha256": "c318cd7982a5ec9c9be8958f5b273419d66573874b1a9282635d696b4ef4bd5e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/utils/xsens_vendor/xsens_to_gmr_adapter.py",
+      "path": "vendor/gmr/general_motion_retargeting/utils/xsens_vendor/xsens_to_gmr_adapter.py",
+      "original_sha256": "afdc6851615c6efe63efdf5877adab543be84d4d6736b4540b84ca60bca2ffe4",
+      "sha256": "afdc6851615c6efe63efdf5877adab543be84d4d6736b4540b84ca60bca2ffe4",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/general_motion_retargeting/xrobot_utils.py",
+      "path": "vendor/gmr/general_motion_retargeting/xrobot_utils.py",
+      "original_sha256": "19ed6e23dae3b8b5200fee53bd6c6d711a991e33126bdd2a60999d3e59bfcafa",
+      "sha256": "19ed6e23dae3b8b5200fee53bd6c6d711a991e33126bdd2a60999d3e59bfcafa",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/pyproject.toml",
+      "path": "vendor/gmr/pyproject.toml",
+      "original_sha256": "06791b52c13a32af081c883d79c8ef15b9bedddf0f060c835d75ac8b4036667a",
+      "sha256": "06791b52c13a32af081c883d79c8ef15b9bedddf0f060c835d75ac8b4036667a",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/scripts/gvhmr_to_robot.py",
+      "path": "vendor/gmr/scripts/gvhmr_to_robot.py",
+      "original_sha256": "aa3f304125bf9bbd689eba04a074b1a48e92a3cecfc44d700ccd52083b8b72d7",
+      "sha256": "aa3f304125bf9bbd689eba04a074b1a48e92a3cecfc44d700ccd52083b8b72d7",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/scripts/smplx_to_robot.py",
+      "path": "vendor/gmr/scripts/smplx_to_robot.py",
+      "original_sha256": "1dae07c8a3ff9fc1ef13b4305b9fa27a7ae4265af40433cb8b3824e32240ae29",
+      "sha256": "1dae07c8a3ff9fc1ef13b4305b9fa27a7ae4265af40433cb8b3824e32240ae29",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/scripts/vis_robot_motion.py",
+      "path": "vendor/gmr/scripts/vis_robot_motion.py",
+      "original_sha256": "afee51915de50216faa5ac11290d292d409a36763e71196fd055060189f9847e",
+      "sha256": "afee51915de50216faa5ac11290d292d409a36763e71196fd055060189f9847e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/__init__.py",
+      "original_sha256": "91772330756351530bfc76b3218777f1366a44c2e88dd3e32ae7014b4610679b",
+      "sha256": "91772330756351530bfc76b3218777f1366a44c2e88dd3e32ae7014b4610679b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/core/__init__.py",
+      "original_sha256": "01aa0e9b01d1d60e60932ce955ba69fd321158ed15b99b498a440839e713d687",
+      "sha256": "01aa0e9b01d1d60e60932ce955ba69fd321158ed15b99b498a440839e713d687",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/backend/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/core/backend/__init__.py",
+      "original_sha256": "605d816606c8a97308f5581db37cdc7e35ba63fe85ea27cbdff6a58f09e49dec",
+      "sha256": "605d816606c8a97308f5581db37cdc7e35ba63fe85ea27cbdff6a58f09e49dec",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/backend/abstract.py",
+      "path": "vendor/gmr/third_party/poselib/core/backend/abstract.py",
+      "original_sha256": "63b450863ab75fe540e49297d7a33ef2984859d1faf6b64511809bfbeb0355a9",
+      "sha256": "63b450863ab75fe540e49297d7a33ef2984859d1faf6b64511809bfbeb0355a9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/backend/logger.py",
+      "path": "vendor/gmr/third_party/poselib/core/backend/logger.py",
+      "original_sha256": "63dd1a736517d9b309d2764391444cb4dab2d57d514e717ea71c1a291e4e2fb3",
+      "sha256": "63dd1a736517d9b309d2764391444cb4dab2d57d514e717ea71c1a291e4e2fb3",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/rotation3d.py",
+      "path": "vendor/gmr/third_party/poselib/core/rotation3d.py",
+      "original_sha256": "0da01250e8e4710098aa1e794f52c6d1dce10810855cb394807fbec07966d42c",
+      "sha256": "0da01250e8e4710098aa1e794f52c6d1dce10810855cb394807fbec07966d42c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/tensor_utils.py",
+      "path": "vendor/gmr/third_party/poselib/core/tensor_utils.py",
+      "original_sha256": "b595958c92a4660df0ccf03a14e80e103f2b2ec344e69d622b13553c4f0f971b",
+      "sha256": "b595958c92a4660df0ccf03a14e80e103f2b2ec344e69d622b13553c4f0f971b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/tests/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/core/tests/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/core/tests/test_rotation.py",
+      "path": "vendor/gmr/third_party/poselib/core/tests/test_rotation.py",
+      "original_sha256": "89e57d29a2827ee1683f3081d8a6e4553aa977922820fa299d628f91298432ee",
+      "sha256": "89e57d29a2827ee1683f3081d8a6e4553aa977922820fa299d628f91298432ee",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/fbx_importer.py",
+      "path": "vendor/gmr/third_party/poselib/fbx_importer.py",
+      "original_sha256": "47a53e5d0a92dcbcbd7b9ebb63239e55d2d655dafb4be83c13a0a9d35de2661b",
+      "sha256": "47a53e5d0a92dcbcbd7b9ebb63239e55d2d655dafb4be83c13a0a9d35de2661b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/skeleton/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/skeleton/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/skeleton/backend/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/skeleton/backend/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/skeleton/backend/fbx/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/skeleton/backend/fbx/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/skeleton/backend/fbx/fbx_backend.py",
+      "path": "vendor/gmr/third_party/poselib/skeleton/backend/fbx/fbx_backend.py",
+      "original_sha256": "14a54d838e85684698fbfc17dbf914728523c86c36af03c6a156582fc1bd2f4e",
+      "sha256": "14a54d838e85684698fbfc17dbf914728523c86c36af03c6a156582fc1bd2f4e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/skeleton/backend/fbx/fbx_read_wrapper.py",
+      "path": "vendor/gmr/third_party/poselib/skeleton/backend/fbx/fbx_read_wrapper.py",
+      "original_sha256": "9d36120aaa04faba0a39413142f827cb38f5fdb2625daae2c0ff994b020caa11",
+      "sha256": "9d36120aaa04faba0a39413142f827cb38f5fdb2625daae2c0ff994b020caa11",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/skeleton/skeleton3d.py",
+      "path": "vendor/gmr/third_party/poselib/skeleton/skeleton3d.py",
+      "original_sha256": "0ca08b3552ecfb879bf751349cc1b2a5a2ded952d905551ac70ba82aed24b65b",
+      "sha256": "0ca08b3552ecfb879bf751349cc1b2a5a2ded952d905551ac70ba82aed24b65b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/common.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/common.py",
+      "original_sha256": "71509b9e7b95ff173565f9ac9b9865e1d34d452a06c206e0a283f7b9d70ab0bc",
+      "sha256": "71509b9e7b95ff173565f9ac9b9865e1d34d452a06c206e0a283f7b9d70ab0bc",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/core.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/core.py",
+      "original_sha256": "5519a509b24a6946872805377634e5f14cc7ebcd8a248e7c81494a6f0aa6edc5",
+      "sha256": "5519a509b24a6946872805377634e5f14cc7ebcd8a248e7c81494a6f0aa6edc5",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/plt_plotter.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/plt_plotter.py",
+      "original_sha256": "a2020566a0ad84bd542eb0d4e9af385611eb33395fd3a773c9a293ca73c7cb53",
+      "sha256": "a2020566a0ad84bd542eb0d4e9af385611eb33395fd3a773c9a293ca73c7cb53",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/simple_plotter_tasks.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/simple_plotter_tasks.py",
+      "original_sha256": "cb959e0e33b852a3b511bd73460ef3a3b680ddfbd122c17ad0c634a5053d9107",
+      "sha256": "cb959e0e33b852a3b511bd73460ef3a3b680ddfbd122c17ad0c634a5053d9107",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/skeleton_plotter_tasks.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/skeleton_plotter_tasks.py",
+      "original_sha256": "9927b5889afdcea77cc79d6200e82ceec10a7266f5dcb42392ebfd62735ab75b",
+      "sha256": "9927b5889afdcea77cc79d6200e82ceec10a7266f5dcb42392ebfd62735ab75b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/tests/__init__.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/tests/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/third_party/poselib/visualization/tests/test_plotter.py",
+      "path": "vendor/gmr/third_party/poselib/visualization/tests/test_plotter.py",
+      "original_sha256": "338fea27e776195c5579a0acf094f55dc796470a21d2325ea4fd6a03939c506f",
+      "sha256": "338fea27e776195c5579a0acf094f55dc796470a21d2325ea4fd6a03939c506f",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/gmr/uv.lock",
+      "path": "vendor/gmr/uv.lock",
+      "original_sha256": "7feda4ce61268fe0772b593b1059086d3b211bb89ae7b9bbed2161cd347d6411",
+      "sha256": "7feda4ce61268fe0772b593b1059086d3b211bb89ae7b9bbed2161cd347d6411",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/__init__.py",
+      "path": "assets/mjlab_unitree_g1/__init__.py",
+      "original_sha256": "c11e649d6d5209becaf6dbca2d09dee83c17844b5d941c2e1cc6f16ba618bf14",
+      "sha256": "c11e649d6d5209becaf6dbca2d09dee83c17844b5d941c2e1cc6f16ba618bf14",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/g1_constants.py",
+      "path": "assets/mjlab_unitree_g1/g1_constants.py",
+      "original_sha256": "30805e420c1dd03518ee582465fbce9cf097f4dc2eb0c1c2fce55c0332040c07",
+      "sha256": "30805e420c1dd03518ee582465fbce9cf097f4dc2eb0c1c2fce55c0332040c07",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/head_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/head_link.STL",
+      "original_sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411",
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_ankle_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_ankle_pitch_link.STL",
+      "original_sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_ankle_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_ankle_roll_link.STL",
+      "original_sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_elbow_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_elbow_link.STL",
+      "original_sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_hip_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_hip_pitch_link.STL",
+      "original_sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_hip_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_hip_roll_link.STL",
+      "original_sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_hip_yaw_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_hip_yaw_link.STL",
+      "original_sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_knee_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_knee_link.STL",
+      "original_sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_rubber_hand.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_rubber_hand.STL",
+      "original_sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+      "sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_shoulder_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_shoulder_pitch_link.STL",
+      "original_sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_shoulder_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_shoulder_roll_link.STL",
+      "original_sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_shoulder_yaw_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_shoulder_yaw_link.STL",
+      "original_sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_wrist_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_wrist_pitch_link.STL",
+      "original_sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9",
+      "sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_wrist_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_wrist_roll_link.STL",
+      "original_sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c",
+      "sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/left_wrist_yaw_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/left_wrist_yaw_link.STL",
+      "original_sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b",
+      "sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/logo_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/logo_link.STL",
+      "original_sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/pelvis.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/pelvis.STL",
+      "original_sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31",
+      "sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/pelvis_contour_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/pelvis_contour_link.STL",
+      "original_sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420",
+      "sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_ankle_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_ankle_pitch_link.STL",
+      "original_sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_ankle_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_ankle_roll_link.STL",
+      "original_sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_elbow_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_elbow_link.STL",
+      "original_sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_hip_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_hip_pitch_link.STL",
+      "original_sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_hip_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_hip_roll_link.STL",
+      "original_sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_hip_yaw_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_hip_yaw_link.STL",
+      "original_sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_knee_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_knee_link.STL",
+      "original_sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_rubber_hand.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_rubber_hand.STL",
+      "original_sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+      "sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_shoulder_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_shoulder_pitch_link.STL",
+      "original_sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_shoulder_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_shoulder_roll_link.STL",
+      "original_sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_shoulder_yaw_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_shoulder_yaw_link.STL",
+      "original_sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_wrist_pitch_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_wrist_pitch_link.STL",
+      "original_sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477",
+      "sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_wrist_roll_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_wrist_roll_link.STL",
+      "original_sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f",
+      "sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/right_wrist_yaw_link.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/right_wrist_yaw_link.STL",
+      "original_sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6",
+      "sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/torso_link_rev_1_0.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/torso_link_rev_1_0.STL",
+      "original_sha256": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723",
+      "sha256": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/waist_roll_link_rev_1_0.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/waist_roll_link_rev_1_0.STL",
+      "original_sha256": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97",
+      "sha256": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/assets/waist_yaw_link_rev_1_0.STL",
+      "path": "assets/mjlab_unitree_g1/xmls/assets/waist_yaw_link_rev_1_0.STL",
+      "original_sha256": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c",
+      "sha256": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c",
+      "modified": false
+    },
+    {
+      "original": "05_reproduce/g1_model/mjlab_unitree_g1/xmls/g1.xml",
+      "path": "assets/mjlab_unitree_g1/xmls/g1.xml",
+      "original_sha256": "febdcbeffbbf84051556ae41a5ac1b43fb479a5d76bdb3f54824dbc2721c20aa",
+      "sha256": "febdcbeffbbf84051556ae41a5ac1b43fb479a5d76bdb3f54824dbc2721c20aa",
+      "modified": false
+    }
+  ]
+}

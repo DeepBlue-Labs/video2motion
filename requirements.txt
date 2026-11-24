@@ -1,0 +1,8 @@
+# Python 3.10–3.13; external ffmpeg is required by run_pipeline.sh.
+# Version ranges are compatibility constraints, not a frozen environment.
+numpy>=1.26,<3
+scipy>=1.11,<2
+mujoco>=3.3,<4
+imageio[ffmpeg]>=2.34,<3
+Pillow>=10
+opencv-python>=4.8

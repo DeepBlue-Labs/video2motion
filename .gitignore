@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+work/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+# Licensed models and newly generated outputs are local only.
+assets/body_models/
+vendor/gmr/assets/body_models/
+
+# User-provided source videos
+inputs/*
+!inputs/gouquan.mp4

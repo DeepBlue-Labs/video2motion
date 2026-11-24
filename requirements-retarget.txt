@@ -1,0 +1,3 @@
+-r requirements.txt
+# Install from the repository root; assets require an editable install.
+-e ./vendor/gmr

@@ -1,0 +1,13 @@
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.mp4 binary
+*.png binary
+*.npz binary
+*.pt binary
+*.pkl binary
+*.STL binary
