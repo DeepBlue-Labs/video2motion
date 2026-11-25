@@ -2,7 +2,7 @@
 
 目标：将原始视频重新处理为 Unitree G1 29 自由度动作。顺序为 **环境准备 → 30 fps 转码 → 人体框检测 → GVHMR 人体重建 → GMR 重定向、关节限位与接地 → CSV 转 NPZ → 关节限速 → 预览与仿真接入**。
 
-本仓库提供视频至 CSV 的脚本和 G1 模型。GVHMR 代码、权重及 SMPL-X 模型需自行准备；CSV→NPZ 与限速工具未随包提供，第 7 步说明其处理要求。完整重新生成限速 NPZ 还需取得这些外部工具。
+本仓库提供视频至 CSV、CSV→50 Hz NPZ、关节限速的脚本和 G1 模型。GVHMR 代码、权重及 SMPL-X 模型需自行准备。
 
 仓库已附带源视频 `inputs/gouquan.mp4`，不附带生成后的 CSV 或 NPZ。以下以该视频为输入。使用 Bash、Python 3.10–3.13；命令从仓库根目录执行，默认使用同一终端。`/path/to/...` 需替换为实际路径；换视频时同步修改文件名和动作名。新结果写入 `work/`。仓库不保留历史重建结果或预览，所有中间结果和预览由本次运行重新生成。
 
@@ -20,6 +20,7 @@ video2motion/
 │   ├── retarget.sh                        # 重定向快捷入口，读取 gouquan 的 GVHMR 结果并生成同名 CSV
 │   ├── g1_model.py                        # 共用 G1 关节顺序、模型加载、脚底几何与 CSV 工具
 │   ├── render_preview.py                  # CSV + 30 fps 源视频→源视频与机器人并排预览
+│   ├── csv_to_npz.py                      # CSV→50 Hz NPZ，关节限速并重新计算 body 数据
 │   ├── render_npz_preview.py              # NPZ→机器人动作预览
 │   ├── validate_repository.py             # 校验迁移文件；--model 额外编译模型并检查关节顺序
 │   ├── render_gvhmr_global_lowres.py       # 可选：在 GVHMR 环境渲染世界视角人体重建预览
@@ -66,10 +67,10 @@ video2motion/
     │   ├── csv_drift/                    # drift 接地 CSV 和 GMR pickle
     │   ├── csv_constant/                 # 可选：constant 接地 CSV 和 GMR pickle
     │   └── preview/                      # 本次 CSV/NPZ 预览视频
-    └── npz/                              # 取得外部工具后生成的 50 Hz NPZ 和限速结果
+    └── npz/                              # 本次转换生成的 50 Hz NPZ 和限速结果
 ```
 
-`vendor/gmr/.venv/` 由 `uv sync --frozen` 生成，SMPL-X 模型需自行下载。目录树中标注“运行时生成”或“自行创建”的内容未随仓库提供。CSV→NPZ 与限速工具仍需按第 7 步从原项目取得；处理 `gouquan.mp4` 时，使用第 6、8 步的显式命令。
+`vendor/gmr/.venv/` 由 `uv sync --frozen` 生成，SMPL-X 模型需自行下载。目录树中标注“运行时生成”或“自行创建”的内容未随仓库提供。处理 `gouquan.mp4` 时，使用第 6–8 步的显式命令。
 
 ## 从原始视频重新处理
 
@@ -103,42 +104,59 @@ python3 -m venv .venv
 
 ### 第 2 步：准备 GMR 与 SMPL-X 模型
 
-**要做什么：** 创建用于重定向的独立环境，并放入 GMR 读取人体姿态所需的模型。此步骤为后续 G1 重定向准备依赖。
+**要做什么：** 安装 GMR 重定向依赖，并准备它读取 GVHMR 结果所需的 SMPL-X neutral 模型。
 
-1. 安装 [uv](https://docs.astral.sh/uv/getting-started/installation/)，使用 GMR 自带锁文件安装依赖：
+**1. 安装固定版本的 GMR。**
 
-```bash
-(cd vendor/gmr && uv sync --frozen)
-```
+参考流程将 GMR 固定在 commit `25f56db79ac411258b377b6d4ccba0c8ff3372ac`，因为重定向脚本会访问 `configuration`、`rot_offsets1`、`error1/error2` 等内部接口。本仓库已在 `vendor/gmr/` 附带该版本源码快照，无需再克隆 GMR 或切换当前仓库的 commit。
 
-2. 在 [SMPL-X 网站](https://smpl-x.is.tue.mpg.de/) 获取获准使用的 `SMPLX_NEUTRAL.npz`，复制到下列位置：
-
-```bash
-mkdir -p vendor/gmr/assets/body_models/smplx
-cp /path/to/SMPLX_NEUTRAL.npz vendor/gmr/assets/body_models/smplx/
-```
-
-3. 在当前终端配置并检查路径：
+安装 [uv](https://docs.astral.sh/uv/getting-started/installation/) 和 Git 后，从仓库根目录执行：
 
 ```bash
 export GMR_ROOT="$V2M_REPO/vendor/gmr"
 export GMR_PY="$GMR_ROOT/.venv/bin/python"
-export SMPLX_BODY_MODELS="$GMR_ROOT/assets/body_models"
-export G1_XML="$V2M_REPO/assets/mjlab_unitree_g1/xmls/g1.xml"
-test -s "$SMPLX_BODY_MODELS/smplx/SMPLX_NEUTRAL.npz"
-"$GMR_PY" -c 'import general_motion_retargeting, torch, mujoco; print("GMR imports OK")'
+command -v uv git
+(cd "$GMR_ROOT" && uv sync --frozen --no-dev --no-cache)
 ```
 
-**成功标志：** `test` 命令退出码为 0，Python 打印 `GMR imports OK`。SMPL-X 模型未随仓库提供，已加入 Git 忽略规则。
+该命令通过网络下载第三方依赖，在 `vendor/gmr/.venv/` 创建独立环境。`--frozen` 表示使用已有锁文件中的版本、不更新锁文件；`--no-dev` 跳过开发依赖；`--no-cache` 避免复用持久包缓存。这里不复制或复用其它项目的虚拟环境。
 
-也可在第 1 步的环境安装 GMR，替代上述 `uv sync` 方式；此方式不使用原锁文件：
+`smplx` Python 包会作为 GMR 依赖安装，锁定 commit 为 `1265df7ba545e8b00f72e7c557c766e15c71632f`。它是人体模型的读取代码，**不包含下一项所需的 SMPL-X 模型文件**。环境还会安装 MuJoCo、NumPy、SciPy、PyTorch、imageio 和 OpenCV 等依赖。参考项目说明 GMR 重定向可使用 CPU 版 PyTorch；本命令沿用本仓库锁文件，并不会自动切换 CPU 版本。
+
+安装需要足够的下载、解压和环境存储空间。可先执行 `df -h "$GMR_ROOT" "${TMPDIR:-/tmp}"` 检查；若报 `No space left on device`，释放空间后重跑安装命令。仅看到 `.venv/` 目录并不表示依赖已安装成功。
+
+**2. 准备 SMPL-X neutral 模型。**
+
+在 [SMPL-X 官网](https://smpl-x.is.tue.mpg.de/) 注册并接受许可，下载 NPZ 格式的 `SMPLX_NEUTRAL.npz`。模型不随本仓库分发，也不会由 `uv sync` 下载。将获准使用的文件复制到 GMR 默认查找位置：
 
 ```bash
-.venv/bin/python -m pip install -r requirements-retarget.txt
-export GMR_PY="$V2M_REPO/.venv/bin/python"
+export SMPLX_BODY_MODELS="$GMR_ROOT/assets/body_models"
+mkdir -p "$SMPLX_BODY_MODELS/smplx"
+cp /path/to/SMPLX_NEUTRAL.npz "$SMPLX_BODY_MODELS/smplx/SMPLX_NEUTRAL.npz"
 ```
 
-GMR 快照 commit 为 `25f56db79ac411258b377b6d4ccba0c8ff3372ac`，依赖来源记录保存在 `vendor/gmr/uv.lock` 和 `INSTALLED_VERSIONS.txt`。继续第 3 步，准备从视频估计人体动作。
+如果已为 GVHMR 下载了同一个模型，可用符号链接共享文件，替代上面的 `cp`；将源路径改为自己的 GVHMR 模型路径，目标位置应尚无同名文件：
+
+```bash
+ln -s /path/to/GVHMR/inputs/checkpoints/body_models/smplx/SMPLX_NEUTRAL.npz \
+  "$SMPLX_BODY_MODELS/smplx/SMPLX_NEUTRAL.npz"
+```
+
+也可保留模型在其它目录，只设置 `SMPLX_BODY_MODELS=/path/to/body_models`，或在第 6 步传 `--body_models /path/to/body_models`。指定的是包含 `smplx/` 子目录的根目录，而不是 NPZ 文件本身；最终必须存在 `<body_models>/smplx/SMPLX_NEUTRAL.npz`。
+
+**3. 检查环境与模型路径。**
+
+GMR 使用的 SMPL-X 人体模型与本仓库的 G1 机器人 MJCF 是两类不同资产。G1 模型用于后续关节限位、脚底计算和预览，路径配置如下：
+
+```bash
+export G1_XML="$V2M_REPO/assets/mjlab_unitree_g1/xmls/g1.xml"
+test -x "$GMR_PY" && test -s "$SMPLX_BODY_MODELS/smplx/SMPLX_NEUTRAL.npz" \
+  && test -s "$G1_XML" && echo "模型路径 OK"
+env -u PYTHONPATH -u PYTHONHOME PYTHONNOUSERSITE=1 "$GMR_PY" -c \
+  'import general_motion_retargeting as gmr, torch, mujoco, smplx; print("GMR:", gmr.__file__); print("GMR imports OK")'
+```
+
+**成功标志：** 打印 `模型路径 OK` 和 `GMR imports OK`，GMR 导入路径位于本仓库的 `vendor/gmr/`。这验证了依赖和文件路径，模型能否正确读取还需第 6 步实际重定向确认。后续保持 `GMR_PY` 指向本仓库 `vendor/gmr/.venv/bin/python`，继续第 3 步准备 GVHMR。
 
 ### 第 3 步：准备视频重建环境
 
@@ -241,15 +259,25 @@ PYCODE
 
 **要做什么：** 将 CSV 的根位置、根四元数和关节角从 30 Hz 重采样到 50 Hz，计算 body 位姿与速度，再按部署配置限制关节速度，最后重新计算与修改后姿态对应的运动量。
 
-**本仓库在这一步缺少执行工具。** 原包引用的 SuperMimic 工具 `scripts/data/csv_to_npz_batch.py` 和 `scripts/deploy/cap_joint_velocity.py` 没有随输入文件提供，因此第 6 步的新 CSV 不会自动得到新 NPZ。需要从原项目取得对应工具及其依赖，确认参数后依次操作：
+使用第 1 步环境直接转换，无需另取 SuperMimic 工具：
 
-1. 把第 6 步生成的 CSV 作为转换输入，指定输入帧率 30 Hz、输出帧率 50 Hz，使用与本仓库一致的 G1 模型和关节顺序；将结果输出到新的 `work/npz/` 目录。
-2. 核对 `configs/deploy_config_hg_ft_325k.json` 和 `configs/deploy_config_robot_constants.json` 中的关节名、速度限及适用机器人配置，再用原项目的限速工具生成新的 `*_vc.npz`。原报告使用的速度上限为 `0.75 × 0.8 × velocity_limit`；具体参数名以取得的工具为准。
-3. 检查新 NPZ 的数组结构、帧率、有限值、四元数和关节速度是否符合预期；修改姿态后应同步更新速度及 body 数据，不能只改 `joint_pos`。
+```bash
+.venv/bin/python scripts/csv_to_npz.py \
+  "$V2M_WORK/csv_drift/gouquan.csv" "$V2M_REPO/work/npz/gouquan.npz" \
+  --input-fps 30 --output-fps 50 \
+  --velocity-config configs/deploy_config_robot_constants.json \
+  --velocity-scale 0.6
+```
 
-**预期产物：** 未限速 NPZ 和限速后的 `*_vc.npz`。输出为 50 Hz，实际帧数应与本次动作时长匹配。
+**输出：** `work/npz/gouquan.npz` 和 `work/npz/gouquan_vc.npz`。默认速度上限为 `0.75 × 0.8 × velocity_limit`，即 `0.6 × velocity_limit`。也可指定 `configs/deploy_config_hg_ft_325k.json`；脚本按关节名称对齐速度限制。只需转换时传 `--skip-velocity-cap`；自定义模型使用 `--robot_xml`，默认使用 `$G1_XML` 或仓库模型。
 
-本仓库没有预生成 NPZ。缺少上述外部工具时，本次流程只能完成到 CSV 和 CSV 预览阶段。
+重采样使用位置/关节角线性插值、根四元数 SLERP；CSV 四元数从 xyzw 转为 NPZ 的 wxyz。采样覆盖原始时间区间内的完整 50 Hz 时间点，不向末帧之后外推，帧数为 `floor((N−1) × 50/30) + 1`。单帧输入输出单帧，速度为零。
+
+限速采用逐帧关节角变化限制，保留第一帧、根轨迹和采样时间，快速运动时关节可能滞后，末帧也可能无法到达原目标。限速不会重新接地，应在第 8 步检查足底和动作质量。修改关节角后，脚本重新计算全部 body 位姿及速度。
+
+NPZ 包含 `fps`、`joint_pos`、`joint_vel`、`body_pos_w`、`body_quat_w`、`body_lin_vel_w`、`body_ang_vel_w`，以及无需 pickle 即可读取的 `joint_names` 和 `body_names`。关节数组为 `(T, 29)`；body 使用 MJCF 顺序、排除 world，第 0 个为 pelvis。body 位置是 body 坐标系原点而非惯性质心，线/角速度均在世界坐标系，单位为 m/s 和 rad/s。速度以相邻帧差分计算，内部帧取前后区间平均，边界取单侧差分。
+
+**成功标志：** 打印两个输出路径、帧数和最大限速修正量；限速结果的 `joint_vel` 不超过归档的 `joint_velocity_limit`。输出文件数值有限且四元数归一化；第 9 步可读取数组。仓库不附带预生成 NPZ，必须先完成第 6 步。
 
 ### 第 8 步：渲染预览，检查动作质量
 
@@ -319,6 +347,6 @@ CSV 为 30 Hz、36 列：根位置 xyz（m）、根四元数 **xyzw**、29 个�
 
 单目估计可能存在漂移、快速摆臂误差或脚底离地；接地和限速后仍需检查动作，并在目标仿真项目验证。本仓库不包含训练或真机控制程序。
 
-本次仓库整理验证了文件完整性、G1 模型加载和脚本语法，未重新执行 GVHMR、GMR、后处理或渲染。以上步骤中的预期结果不是本次完整重跑的实测结论。
+本次仓库整理验证了文件完整性、G1 模型加载和脚本语法，未重新执行真实视频的 GVHMR、GMR、后处理或渲染。以上步骤中的预期结果不是本次完整重跑的实测结论。
 
 GMR 使用其 `vendor/gmr/LICENSE`；Unitree 资产许可见 `vendor/gmr/assets/unitree_g1/LICENSE`。其它组件遵循各自上游条款；原包未为 mjlab 模型目录单独附许可证，原脚本文档声明 MIT 但未附独立授权全文。SMPL-X/GVHMR 相关模型与产物须遵守相应许可，原报告标注非商业科研用途；源视频版权归原作者。
